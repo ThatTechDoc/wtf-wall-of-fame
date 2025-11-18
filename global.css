@@ -1,0 +1,16 @@
+/* ========================================= */
+/* BRAND COLORS */
+/* ========================================= */
+
+:root {
+    --deep-purple: #570f47;
+    --brand-purple: #941177;
+    --mid-purple: #ad1f8e;
+    --light-purple: #e052c1;
+    --soft-purple: #f0a8e0;
+
+    --gray-dark: #393A4A;
+    --gray-soft: #69727D;
+    --white: #ffffff;
+    --light-bg: #F7F8FA;
+}

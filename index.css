@@ -1,0 +1,156 @@
+/* GENERAL STYLING */
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: var(--white);
+    color: var(--gray-dark);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    padding: 15px 5%;
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--brand-purple);
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--gray-dark);
+    font-weight: 600;
+}
+
+.nav-search {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--gray-soft);
+}
+
+.login-btn, .signup-btn {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+.signup-btn {
+    background: var(--brand-purple);
+    color: white;
+}
+
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 5%;
+    background: var(--light-bg);
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.hero h1 {
+    color: var(--brand-purple);
+    font-size: 2.8rem;
+}
+
+.primary-btn {
+    background: var(--brand-purple);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.outline-btn {
+    border: 2px solid var(--brand-purple);
+    color: var(--brand-purple);
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* CARDS */
+
+.role-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 5%;
+}
+
+.role-card {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid var(--soft-purple);
+}
+
+/* ABOUT SECTION */
+
+.about {
+    padding: 60px 5%;
+    background: var(--brand-purple);
+    color: white;
+    text-align: center;
+}
+
+/* GOALS & OBJECTIVES */
+
+.goals-section {
+    padding: 60px 5%;
+}
+
+.goals-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid var(--brand-purple);
+}
+
+.goals-title, .objectives-title {
+    background: var(--brand-purple);
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.goal, .objective {
+    padding: 20px;
+    border-bottom: 1px solid var(--light-purple);
+}
+
+/* FOOTER */
+
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 5%;
+    background: var(--deep-purple);
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background: var(--brand-purple);
+    color: white;
+    font-size: 0.9rem;
+}
