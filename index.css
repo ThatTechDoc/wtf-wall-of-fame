@@ -1,9 +1,15 @@
 /* GENERAL STYLING */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    background: var(--white);
+    background: var(--background-color);
     color: var(--gray-dark);
 }
 
@@ -14,42 +20,81 @@ h1, h2, h3, h4 {
 /* NAVBAR */
 
 .navbar {
-    width: 100%;
-    padding: 15px 5%;
-    background: var(--white);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 3px solid var(--brand-purple);
+    padding: 15px 5%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+   
 }
 
-.nav-links {
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-links{
     display: flex;
-    gap: 25px;
-    list-style: none;
+    gap: 4px;
 }
 
-.nav-links a {
+.nav-link{
+    font-size: 12px;
+    color: var( --brand-purple);
+    margin: 0 15px;
+    font-weight: 500;
     text-decoration: none;
-    color: var(--gray-dark);
-    font-weight: 600;
 }
 
-.nav-search {
-    padding: 8px;
-    border-radius: 8px;
-    border: 1px solid var(--gray-soft);
-}
-
-.login-btn, .signup-btn {
+.nav-links a{
     text-decoration: none;
+}
+
+.auth-search {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.search-box input {
+    background-color:transparent;
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+    width: 150px;
+}
+
+.search-icon {
+    background: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.btn-login {
+    background: transparent;
+    border: 1px solid var(--brand-purple);
+    color:black;
     padding: 8px 15px;
-    border-radius: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
 }
 
-.signup-btn {
-    background: var(--brand-purple);
-    color: white;
+.btn-signup {
+    background-color: var(--brand-purple);
+    color:var(--white);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* HERO SECTION */
@@ -58,16 +103,30 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: space-between;
     padding: 60px 5%;
+    align-items: center;
+    gap: 40px;
     background: var(--light-bg);
 }
 
 .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 90%; */
     max-width: 550px;
 }
 
 .hero h1 {
     color: var(--brand-purple);
     font-size: 2.8rem;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    font-weight: 900;
+}
+
+.hero-buttons{
+    margin-top: 10px;
 }
 
 .primary-btn {
@@ -75,7 +134,9 @@ h1, h2, h3, h4 {
     color: white;
     padding: 10px 20px;
     border-radius: 6px;
+    border: none;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .outline-btn {
@@ -84,6 +145,28 @@ h1, h2, h3, h4 {
     padding: 10px 20px;
     border-radius: 6px;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.brand{
+    width: 130px;
+    height: 130px;
+}
+
+.hero-gallery{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+}
+
+.img1{
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+
+.img2{
+     border-top-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+
 }
 
 /* CARDS */
@@ -100,15 +183,33 @@ h1, h2, h3, h4 {
     border-radius: 10px;
     padding: 25px;
     width: 300px;
-    text-align: center;
-    border: 1px solid var(--soft-purple);
+    text-align: left;
+
+}
+
+.role-card h3{
+    color: var( --brand-purple);
+}
+
+.secondary-btn{
+    border: 2px solid var(--brand-purple);
+    padding: 6px;
+    color: black;
+    border-radius: 3px;
+    background-color: transparent;
+    margin-top: 8px;
+    cursor: pointer;
 }
 
 /* ABOUT SECTION */
 
 .about {
     padding: 60px 5%;
-    background: var(--brand-purple);
+    background-image:url(./img/youths.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(148,17,119,0.7);
+    background-blend-mode: multiply;
     color: white;
     text-align: center;
 }

@@ -14,40 +14,60 @@
 <body>
 
     <!-- NAVIGATION BAR -->
-    <nav class="navbar">
-        <div class="nav-left">
-            <img src="logo.png" alt="WTF Logo" class="logo">
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Profiles</a></li>
-                <li><a href="#">Impact Stories</a></li>
-            </ul>
-        </div>
-
-        <div class="nav-right">
-            <input type="text" placeholder="Search..." class="nav-search">
-            <a href="#" class="login-btn">Log in</a>
-            <a href="#" class="signup-btn">Sign up</a>
-        </div>
-    </nav>
+    <header class="navbar">
+        <img src="./img/wt.svg" alt="" class="logo">
+        <nav class="nav-links">
+            <a href=""><p class="nav-link">Home</p></a>
+            <a href=""><p class="nav-link">Profiles</p></a>
+            <a href=""><p class="nav-link">Explore Fellows</p></a>
+            <a href=""><p class="nav-link">Impact Stories</p></a>
+            <a href=""><p class="nav-link">About</p></a>
+            
+            <!-- <a href="#">Home</a>
+            <a href="#">Profiles</a>
+            <a href="#">Explore Fellows</a>
+            <a href="">Impact Stories</a> -->
+            <!-- <a href="">About</a> -->
+        </nav>
+        <!-- <div class="auth-search">
+            <div class="search-box">
+                <input type="text" placeholder="">
+                <img src="./img/search.svg" alt="search icons">
+            </div>
+            <button class="btn-login">Log In</button>
+            <button class="btn-signup">Sign Up</button>
+        </div> -->
+    </header>
 
 
     <!-- 1. HERO SECTION -->
-    <section class="hero">
+      <section class="hero"> 
+          <div class="hero-gallery">
+            <img class="img1 brand" src="./img/lucy.jpeg" alt="">
+            <img class="img2 brand" src="./img/Angella.jpeg" alt="">
+            <img class="img1 brand" src="./img/lucy.jpeg" alt="">
+            <img class="img2 brand" src="./img/Angella.jpeg" alt="">
+
+        </div> 
+
         <div class="hero-text">
             <h1>Discover Africa’s Top Female Talent</h1>
             <p>Meet the army of tech empowered, digitally enabled social champions on a journey to transform their communities through tech.</p>
-            <div class="hero-buttons">
-                <a href="#" class="primary-btn">Explore Fellows</a>
-                <a href="#" class="outline-btn">Impact Stories</a>
+          <div class="hero-buttons">
+
+                <a href="#"><button class="outline-btn">Explore Fellows</button></a>
+                <!-- <a href="#"><button class="primary-btn">Impact Stories</button></a> -->
             </div>
         </div>
 
         <div class="hero-gallery">
-            <!-- Put photos here later -->
-        </div>
-    </section>
+            <img class="img1 brand" src="./img/lucy.jpeg" alt="">
+            <img class="img2 brand" src="./img/Angella.jpeg" alt="">
+            <img class="img1 brand" src="./img/lucy.jpeg" alt="">
+            <img class="img2 brand" src="./img/Angella.jpeg" alt="">
+
+        </div> 
+    </section> 
 
 
     <!-- 2. CARDS SECTION: I am a Fellow / I am a Visitor -->
@@ -56,14 +76,14 @@
             <img src="fellow-icon.png" alt="">
             <h3>I am a Fellow</h3>
             <p>Here showcase your personal journey through the fellowship and inspire the next wave of women in technology.</p>
-            <a href="#" class="secondary-btn">Get Started</a>
+            <a href="#"><button class="secondary-btn">Get Started</button></a>
         </div>
 
         <div class="role-card">
             <img src="visitor-icon.png" alt="">
             <h3>I am a Visitor</h3>
             <p>Looking for exceptional talent creating innovative solutions and driving impact through digital technology.</p>
-            <a href="#" class="secondary-btn">Find Talent</a>
+            <a href="#"><button class="secondary-btn">Explore Fellows</button></a>
         </div>
     </section>
 
